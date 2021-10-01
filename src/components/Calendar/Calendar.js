@@ -2,15 +2,15 @@ import {} from "./Calendar.module.css";
 
 const Calendar = () => {
   let day = new Date().getDay();
-  let week = new Array(
+  let week = [
     "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
-  );
+    "Saturday",
+  ];
   let weekday = week[day];
 
   return (

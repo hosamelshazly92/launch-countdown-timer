@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 16px;
+}
+
+.figure {
+  width: 196px;
+  height: 188px;
+  background: none;
+  border-radius: 16px;
+  position: relative;
+  background-image: linear-gradient(0deg, #34364f, #1c1e30);
+  box-shadow: 0 12px rgb(25 27 38);
+}
+
+.figure:before {
+  content: "";
+  display: block;
+  width: 196px;
+  height: 94px;
+  border-radius: 16px 16px 0 0;
+  background-image: linear-gradient(0deg, #232339, #2c2c44);
+}
+
+.figure .section {
+  width: 196px;
+  height: 94px;
+  position: absolute;
+  top: 54px;
+  font: 600 120px/74px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  letter-spacing: -2px;
+  color: #ff5c89;
+  text-align: center;
+  z-index: 10;
+}
+
+.figure .section:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 34px;
+  width: 8px;
+  height: 12px;
+  background-color: #191b26;
+  border-radius: 0 8px 8px 0;
+}
+
+.figure .section:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 34px;
+  right: 0;
+  width: 8px;
+  height: 12px;
+  background-color: #191b26;
+  border-radius: 8px 0 0 8px;
+}
+
+.title {
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  color: #818099;
+}
